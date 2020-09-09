@@ -1,6 +1,6 @@
 = websockets-article project
 
-![CI](https://github.com/cloudy-engineering/quarkus-chat-api/workflows/CI/badge.svg)
+image::https://github.com/cloudy-engineering/quarkus-chat-api/workflows/CI/badge.svg[CI]
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
