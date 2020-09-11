@@ -1,5 +1,6 @@
 package com.brightfield.streams;
 
+import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.common.http.TestHTTPResource;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Assertions;
@@ -13,6 +14,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
 
 @QuarkusTest
+@QuarkusTestResource(value = InfrastructureTestResource.class)
 public class SocketEndpointTest {
 
     private static final LinkedBlockingDeque<String> MESSAGES = new LinkedBlockingDeque<>();
@@ -46,4 +48,5 @@ public class SocketEndpointTest {
             MESSAGES.add(message);
         }
     }
+
 }
